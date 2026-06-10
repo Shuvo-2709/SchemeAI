@@ -10,6 +10,7 @@ from fastapi.responses import JSONResponse
 
 app = FastAPI()
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # ==========================
 # Gemini Configuration
 # ==========================
@@ -28,7 +29,7 @@ else:
 
 app.mount(
     "/static",
-    StaticFiles(directory="static"),
+    StaticFiles(directory=os.path.join(BASE_DIR, "static")),
     name="static"
 )
 
@@ -44,8 +45,12 @@ templates = Jinja2Templates(
 # Load Schemes
 # ==========================
 
-with open("static/data/schemes.json", "r", encoding="utf-8") as file:
 
+with open(
+    os.path.join(BASE_DIR, "static", "data", "schemes.json"),
+    "r",
+    encoding="utf-8"
+) as file:
     schemes = json.load(file)
 
 # ==========================
@@ -55,6 +60,7 @@ with open("static/data/schemes.json", "r", encoding="utf-8") as file:
 @app.get("/", response_class=HTMLResponse)
 async def home(request: Request):
 
+    # Home
     return templates.TemplateResponse(
         "index.html",
         {
@@ -179,7 +185,7 @@ async def results(
 
     return templates.TemplateResponse(
         "results.html",
-        {
+        context={
             "request": request,
             "schemes": recommended_schemes
         }
