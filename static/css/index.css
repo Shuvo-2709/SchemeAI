@@ -1,0 +1,509 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f7fa;
+    transition: .4s;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar {
+
+    position: fixed;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 80px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 80px;
+
+    backdrop-filter: blur(15px);
+
+    background: rgba(255, 255, 255, .85);
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, .2);
+
+    z-index: 1000;
+}
+
+.logo {
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: #0066ff;
+}
+
+.nav-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+.nav-links {
+
+    display: flex;
+
+    list-style: none;
+
+    gap: 30px;
+}
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: #333;
+
+    font-weight: 500;
+
+    transition: .3s;
+}
+
+.nav-links a:hover {
+
+    color: #0066ff;
+}
+
+/* ==========================
+   DARK MODE BUTTON
+========================== */
+
+.theme-toggle {
+
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(135deg,
+            #0066ff,
+            #00c897);
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.theme-toggle:hover {
+
+    transform: scale(1.1);
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(-45deg,
+            #0066ff,
+            #00c897,
+            #3b82f6,
+            #00b894);
+
+    background-size: 400% 400%;
+
+    animation:
+        gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.hero-content {
+
+    max-width: 900px;
+}
+
+.tag {
+
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    border-radius: 50px;
+
+    margin-bottom: 25px;
+
+    background:
+        rgba(255, 255, 255, .2);
+
+    border:
+        1px solid rgba(255, 255, 255, .3);
+}
+
+.hero-content h1 {
+
+    font-size: 72px;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+}
+
+.hero-content p {
+
+    font-size: 20px;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.hero-btn {
+
+    padding: 15px 35px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background: white;
+
+    color: #0066ff;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.hero-btn:hover {
+
+    transform: translateY(-5px);
+}
+
+.secondary-btn {
+
+    padding: 15px 35px;
+
+    border-radius: 50px;
+
+    border: 2px solid white;
+
+    background: transparent;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.secondary-btn:hover {
+
+    background: white;
+
+    color: #0066ff;
+}
+
+/* ==========================
+   STATS
+========================== */
+
+.stats {
+
+    padding: 80px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+}
+
+.stat-card {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, .08);
+
+    transition: .3s;
+}
+
+.stat-card:hover {
+
+    transform: translateY(-8px);
+}
+
+.stat-card h2 {
+
+    color: #0066ff;
+
+    font-size: 45px;
+}
+
+.stat-card p {
+
+    color: #666;
+}
+
+/* ==========================
+   FEATURES
+========================== */
+
+.features {
+
+    padding: 100px 80px;
+}
+
+.features h2 {
+
+    text-align: center;
+
+    font-size: 40px;
+
+    margin-bottom: 50px;
+
+    color: #222;
+}
+
+.feature-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+}
+
+.feature-card {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .08);
+
+    transition: .3s;
+}
+
+.feature-card:hover {
+
+    transform:
+        translateY(-10px) scale(1.03);
+}
+
+.feature-card h3 {
+
+    color: #0066ff;
+
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+
+    color: #555;
+
+    line-height: 1.8;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer {
+
+    background: #0f172a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+/* ==========================
+   DARK MODE
+========================== */
+
+body.dark {
+
+    background: #0f172a;
+}
+
+body.dark .navbar {
+
+    background: #1e293b;
+}
+
+body.dark .logo {
+
+    color: white;
+}
+
+body.dark .nav-links a {
+
+    color: #e2e8f0;
+}
+
+body.dark .stats {
+
+    background: #111827;
+}
+
+body.dark .stat-card {
+
+    background: #1e293b;
+
+    color: white;
+}
+
+body.dark .stat-card p {
+
+    color: #cbd5e1;
+}
+
+body.dark .features {
+
+    background: #0f172a;
+}
+
+body.dark .features h2 {
+
+    color: white;
+}
+
+body.dark .feature-card {
+
+    background: #1e293b;
+}
+
+body.dark .feature-card h3 {
+
+    color: #60a5fa;
+}
+
+body.dark .feature-card p {
+
+    color: #cbd5e1;
+}
+
+body.dark footer {
+
+    background: #020617;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px) {
+
+    .navbar {
+
+        padding: 0 20px;
+    }
+
+    .nav-links {
+
+        display: none;
+    }
+
+    .hero-content h1 {
+
+        font-size: 40px;
+    }
+
+    .hero-content p {
+
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+
+        flex-direction: column;
+    }
+
+    .stats {
+
+        padding: 40px 20px;
+    }
+
+    .features {
+
+        padding: 60px 20px;
+    }
+}
