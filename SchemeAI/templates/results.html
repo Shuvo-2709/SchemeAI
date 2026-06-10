@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        SchemeAI Recommendations
+    </title>
+
+    <link rel="stylesheet" href="/static/css/results.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Theme Toggle -->
+
+    <button id="themeToggle" class="theme-toggle">
+
+        🌙
+
+    </button>
+
+    <!-- Back Button -->
+
+    <a href="/eligibility" class="back-btn">
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+        Back
+
+    </a>
+
+    <div class="container">
+
+        <!-- Header -->
+
+        <div class="header">
+
+            <div class="header-badge">
+
+                <i class="fa-solid fa-robot"></i>
+
+                AI Analysis Completed
+
+            </div>
+
+            <h1>
+
+                Your Personalized Scheme Recommendations
+
+            </h1>
+
+            <p>
+
+                Based on your profile analysis,
+                SchemeAI has identified the most
+                suitable government schemes for you.
+
+            </p>
+
+        </div>
+
+        {% if schemes %}
+
+        <div class="scheme-grid">
+
+            {% for scheme in schemes %}
+
+            <div class="scheme-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h2>
+
+                            {{ scheme.name }}
+
+                        </h2>
+
+                        <p class="scheme-type">
+
+                            {{ scheme.occupation }} Scheme
+
+                        </p>
+
+                    </div>
+
+                    <div class="score-circle">
+
+                        {{ scheme.score }}%
+
+                    </div>
+
+                </div>
+
+                <div class="status">
+
+                    {{ scheme.status }}
+
+                </div>
+
+                <p class="benefits">
+
+                    {{ scheme.benefits }}
+
+                </p>
+
+                <div class="details">
+
+                    <div class="detail-box">
+
+                        <span>
+                            Occupation
+                        </span>
+
+                        <strong>
+                            {{ scheme.occupation }}
+                        </strong>
+
+                    </div>
+
+                    <div class="detail-box">
+
+                        <span>
+                            Income Limit
+                        </span>
+
+                        <strong>
+                            ₹{{ scheme.income_limit }}
+                        </strong>
+
+                    </div>
+
+                    <div class="detail-box">
+
+                        <span>
+                            State
+                        </span>
+
+                        <strong>
+                            {{ scheme.state }}
+                        </strong>
+
+                    </div>
+
+                </div>
+
+                <a href="/scheme/{{ scheme.id }}?score={{ scheme.score }}&status={{ scheme.status }}" class="btn">
+
+                    View Details
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+        {% else %}
+
+        <div class="empty">
+
+            <i class="fa-solid fa-circle-exclamation"></i>
+
+            <h2>
+
+                No Suitable Schemes Found
+
+            </h2>
+
+            <p>
+
+                Try modifying your profile details
+                and run the eligibility analysis again.
+
+            </p>
+
+            <a href="/eligibility">
+
+                Go Back
+
+            </a>
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+    <!-- Dark Mode Script -->
+
+    <script src="/static/js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,857 @@
+[
+  {
+    "id": 1,
+    "name": "National Scholarship Portal",
+    "occupation": "Student",
+    "income_limit": 250000,
+    "state": "All",
+    "minimum_age": 17,
+    "maximum_age": 35,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "Diploma",
+      "B.Tech",
+      "BCA",
+      "Graduate"
+    ],
+    "priority_score": 81,
+    "benefits": "Benefits under National Scholarship Portal.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Marksheet"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Swami Vivekananda Scholarship",
+    "occupation": "Student",
+    "income_limit": 250000,
+    "state": "West Bengal",
+    "minimum_age": 17,
+    "maximum_age": 35,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "Diploma",
+      "B.Tech",
+      "BCA",
+      "Graduate"
+    ],
+    "priority_score": 82,
+    "benefits": "Benefits under Swami Vivekananda Scholarship.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Marksheet"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Student Credit Card Scheme",
+    "occupation": "Student",
+    "income_limit": 250000,
+    "state": "West Bengal",
+    "minimum_age": 17,
+    "maximum_age": 35,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "Diploma",
+      "B.Tech",
+      "BCA",
+      "Graduate"
+    ],
+    "priority_score": 83,
+    "benefits": "Benefits under Student Credit Card Scheme.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Marksheet"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "EWS Scholarship",
+    "occupation": "Student",
+    "income_limit": 250000,
+    "state": "All",
+    "minimum_age": 17,
+    "maximum_age": 35,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "Diploma",
+      "B.Tech",
+      "BCA",
+      "Graduate"
+    ],
+    "priority_score": 84,
+    "benefits": "Benefits under EWS Scholarship.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Marksheet"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Post Matric Scholarship SC",
+    "occupation": "Student",
+    "income_limit": 250000,
+    "state": "All",
+    "minimum_age": 17,
+    "maximum_age": 35,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "Diploma",
+      "B.Tech",
+      "BCA",
+      "Graduate"
+    ],
+    "priority_score": 85,
+    "benefits": "Benefits under Post Matric Scholarship SC.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Marksheet"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Post Matric Scholarship ST",
+    "occupation": "Student",
+    "income_limit": 250000,
+    "state": "All",
+    "minimum_age": 17,
+    "maximum_age": 35,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "Diploma",
+      "B.Tech",
+      "BCA",
+      "Graduate"
+    ],
+    "priority_score": 86,
+    "benefits": "Benefits under Post Matric Scholarship ST.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Marksheet"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "National Fellowship OBC",
+    "occupation": "Student",
+    "income_limit": 1000000,
+    "state": "All",
+    "minimum_age": 17,
+    "maximum_age": 35,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "Diploma",
+      "B.Tech",
+      "BCA",
+      "Graduate"
+    ],
+    "priority_score": 87,
+    "benefits": "Benefits under National Fellowship OBC.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Marksheet"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Digital India Internship",
+    "occupation": "Student",
+    "income_limit": 1000000,
+    "state": "All",
+    "minimum_age": 17,
+    "maximum_age": 35,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "Diploma",
+      "B.Tech",
+      "BCA",
+      "Graduate"
+    ],
+    "priority_score": 88,
+    "benefits": "Benefits under Digital India Internship.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Marksheet"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "National Apprenticeship Scheme",
+    "occupation": "Student",
+    "income_limit": 1000000,
+    "state": "All",
+    "minimum_age": 17,
+    "maximum_age": 35,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "Diploma",
+      "B.Tech",
+      "BCA",
+      "Graduate"
+    ],
+    "priority_score": 89,
+    "benefits": "Benefits under National Apprenticeship Scheme.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Marksheet"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "National Education Loan Scheme",
+    "occupation": "Student",
+    "income_limit": 1000000,
+    "state": "All",
+    "minimum_age": 17,
+    "maximum_age": 35,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "Diploma",
+      "B.Tech",
+      "BCA",
+      "Graduate"
+    ],
+    "priority_score": 90,
+    "benefits": "Benefits under National Education Loan Scheme.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Marksheet"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "PM Kisan",
+    "occupation": "Farmer",
+    "income_limit": 1000000,
+    "state": "All",
+    "minimum_age": 18,
+    "maximum_age": 65,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "School",
+      "Diploma",
+      "Graduate",
+      "B.Tech"
+    ],
+    "priority_score": 85,
+    "benefits": "Benefits under PM Kisan.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Records"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Crop Insurance Scheme",
+    "occupation": "Farmer",
+    "income_limit": 1000000,
+    "state": "All",
+    "minimum_age": 18,
+    "maximum_age": 65,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "School",
+      "Diploma",
+      "Graduate",
+      "B.Tech"
+    ],
+    "priority_score": 85,
+    "benefits": "Benefits under Crop Insurance Scheme.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Records"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Kisan Credit Card",
+    "occupation": "Farmer",
+    "income_limit": 1000000,
+    "state": "All",
+    "minimum_age": 18,
+    "maximum_age": 65,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "School",
+      "Diploma",
+      "Graduate",
+      "B.Tech"
+    ],
+    "priority_score": 85,
+    "benefits": "Benefits under Kisan Credit Card.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Records"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Soil Health Card",
+    "occupation": "Farmer",
+    "income_limit": 1000000,
+    "state": "All",
+    "minimum_age": 18,
+    "maximum_age": 65,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "School",
+      "Diploma",
+      "Graduate",
+      "B.Tech"
+    ],
+    "priority_score": 85,
+    "benefits": "Benefits under Soil Health Card.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Records"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "PM Fasal Bima",
+    "occupation": "Farmer",
+    "income_limit": 1000000,
+    "state": "All",
+    "minimum_age": 18,
+    "maximum_age": 65,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "School",
+      "Diploma",
+      "Graduate",
+      "B.Tech"
+    ],
+    "priority_score": 85,
+    "benefits": "Benefits under PM Fasal Bima.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Records"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "PMEGP",
+    "occupation": "Business",
+    "income_limit": 1000000,
+    "state": "All",
+    "minimum_age": 18,
+    "maximum_age": 60,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "Diploma",
+      "Graduate",
+      "B.Tech",
+      "BCA"
+    ],
+    "priority_score": 88,
+    "benefits": "Benefits under PMEGP.",
+    "documents": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Business Proof"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Mudra Loan",
+    "occupation": "Business",
+    "income_limit": 1000000,
+    "state": "All",
+    "minimum_age": 18,
+    "maximum_age": 60,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "Diploma",
+      "Graduate",
+      "B.Tech",
+      "BCA"
+    ],
+    "priority_score": 88,
+    "benefits": "Benefits under Mudra Loan.",
+    "documents": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Business Proof"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Stand Up India",
+    "occupation": "Business",
+    "income_limit": 1000000,
+    "state": "All",
+    "minimum_age": 18,
+    "maximum_age": 60,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "Diploma",
+      "Graduate",
+      "B.Tech",
+      "BCA"
+    ],
+    "priority_score": 88,
+    "benefits": "Benefits under Stand Up India.",
+    "documents": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Business Proof"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "PM SVANidhi",
+    "occupation": "Business",
+    "income_limit": 1000000,
+    "state": "All",
+    "minimum_age": 18,
+    "maximum_age": 60,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "Diploma",
+      "Graduate",
+      "B.Tech",
+      "BCA"
+    ],
+    "priority_score": 88,
+    "benefits": "Benefits under PM SVANidhi.",
+    "documents": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Business Proof"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Startup India Seed Fund",
+    "occupation": "Business",
+    "income_limit": 1000000,
+    "state": "All",
+    "minimum_age": 18,
+    "maximum_age": 60,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "Diploma",
+      "Graduate",
+      "B.Tech",
+      "BCA"
+    ],
+    "priority_score": 88,
+    "benefits": "Benefits under Startup India Seed Fund.",
+    "documents": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Business Proof"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Atal Pension Yojana",
+    "occupation": "Employee",
+    "income_limit": 1000000,
+    "state": "All",
+    "minimum_age": 18,
+    "maximum_age": 65,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "School",
+      "Diploma",
+      "Graduate",
+      "B.Tech"
+    ],
+    "priority_score": 82,
+    "benefits": "Benefits under Atal Pension Yojana.",
+    "documents": [
+      "Aadhaar Card",
+      "Bank Account"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "PM Suraksha Bima Yojana",
+    "occupation": "Employee",
+    "income_limit": 1000000,
+    "state": "All",
+    "minimum_age": 18,
+    "maximum_age": 65,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "School",
+      "Diploma",
+      "Graduate",
+      "B.Tech"
+    ],
+    "priority_score": 82,
+    "benefits": "Benefits under PM Suraksha Bima Yojana.",
+    "documents": [
+      "Aadhaar Card",
+      "Bank Account"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "PM Jeevan Jyoti Bima Yojana",
+    "occupation": "Employee",
+    "income_limit": 1000000,
+    "state": "All",
+    "minimum_age": 18,
+    "maximum_age": 65,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "School",
+      "Diploma",
+      "Graduate",
+      "B.Tech"
+    ],
+    "priority_score": 82,
+    "benefits": "Benefits under PM Jeevan Jyoti Bima Yojana.",
+    "documents": [
+      "Aadhaar Card",
+      "Bank Account"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Ayushman Bharat",
+    "occupation": "Employee",
+    "income_limit": 1000000,
+    "state": "All",
+    "minimum_age": 18,
+    "maximum_age": 65,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "School",
+      "Diploma",
+      "Graduate",
+      "B.Tech"
+    ],
+    "priority_score": 82,
+    "benefits": "Benefits under Ayushman Bharat.",
+    "documents": [
+      "Aadhaar Card",
+      "Bank Account"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "PM Awas Yojana",
+    "occupation": "Employee",
+    "income_limit": 1000000,
+    "state": "All",
+    "minimum_age": 18,
+    "maximum_age": 65,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "School",
+      "Diploma",
+      "Graduate",
+      "B.Tech"
+    ],
+    "priority_score": 82,
+    "benefits": "Benefits under PM Awas Yojana.",
+    "documents": [
+      "Aadhaar Card",
+      "Bank Account"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Skill India Training",
+    "occupation": "Unemployed",
+    "income_limit": 500000,
+    "state": "All",
+    "minimum_age": 18,
+    "maximum_age": 80,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "School",
+      "Diploma",
+      "Graduate",
+      "B.Tech"
+    ],
+    "priority_score": 78,
+    "benefits": "Benefits under Skill India Training.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "PM Kaushal Vikas Yojana",
+    "occupation": "Unemployed",
+    "income_limit": 500000,
+    "state": "All",
+    "minimum_age": 18,
+    "maximum_age": 80,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "School",
+      "Diploma",
+      "Graduate",
+      "B.Tech"
+    ],
+    "priority_score": 78,
+    "benefits": "Benefits under PM Kaushal Vikas Yojana.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Widow Pension Scheme",
+    "occupation": "Unemployed",
+    "income_limit": 500000,
+    "state": "All",
+    "minimum_age": 18,
+    "maximum_age": 80,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "School",
+      "Diploma",
+      "Graduate",
+      "B.Tech"
+    ],
+    "priority_score": 78,
+    "benefits": "Benefits under Widow Pension Scheme.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Senior Citizen Pension Scheme",
+    "occupation": "Unemployed",
+    "income_limit": 500000,
+    "state": "All",
+    "minimum_age": 18,
+    "maximum_age": 80,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "School",
+      "Diploma",
+      "Graduate",
+      "B.Tech"
+    ],
+    "priority_score": 78,
+    "benefits": "Benefits under Senior Citizen Pension Scheme.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "National Livelihood Mission",
+    "occupation": "Unemployed",
+    "income_limit": 500000,
+    "state": "All",
+    "minimum_age": 18,
+    "maximum_age": 80,
+    "category": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "education_required": [
+      "School",
+      "Diploma",
+      "Graduate",
+      "B.Tech"
+    ],
+    "priority_score": 78,
+    "benefits": "Benefits under National Livelihood Mission.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate"
+    ]
+  }
+]

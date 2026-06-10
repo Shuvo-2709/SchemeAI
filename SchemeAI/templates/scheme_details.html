@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ scheme.name }} | SchemeAI</title>
+
+    <link rel="stylesheet" href="/static/css/scheme_details.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            SchemeAI
+        </div>
+
+        <div class="nav-right">
+
+            <a href="javascript:history.back()" class="back-link">
+
+                <i class="fa-solid fa-arrow-left"></i>
+                Back
+            </a>
+
+            <!-- Dark Mode Toggle -->
+
+            <button id="themeToggle" class="theme-toggle">
+                🌙
+            </button>
+        </div>
+
+    </nav>
+
+    <div class="container">
+
+        {% if scheme %}
+
+        <!-- Hero Section -->
+
+        <div class="scheme-header">
+
+            <div class="scheme-info">
+
+                <span class="scheme-badge">
+
+                    {{ scheme.status }}
+
+                </span>
+
+                <h1 id="schemeName">
+
+                    {{ scheme.name }}
+
+                </h1>
+
+                <p id="schemeBenefits" style="display:none;">
+
+                    {{ scheme.benefits }}
+
+                </p>
+
+                <p>
+
+                    AI-powered scheme analysis and
+                    eligibility guidance.
+
+                </p>
+
+            </div>
+
+            <div class="scheme-score">
+
+                <span class="score-number">
+
+                    {{ scheme.score }}%
+
+                </span>
+
+                <!-- <span class="score-percent">
+
+                    %
+
+                </span> -->
+
+                <small>
+
+                    Match Score
+
+                </small>
+
+            </div>
+
+        </div>
+
+        <!-- Overview -->
+
+        <div class="card">
+
+            <h2>
+
+                <i class="fa-solid fa-circle-info"></i>
+                Scheme Overview
+
+            </h2>
+
+            <p>
+
+                {{ scheme.benefits }}
+
+            </p>
+
+        </div>
+
+        <!-- Eligibility -->
+
+        <div class="card">
+
+            <h2>
+
+                <i class="fa-solid fa-user-check"></i>
+                Eligibility Criteria
+
+            </h2>
+
+            <div class="info-grid">
+
+                <div class="info-box">
+
+                    <h3>
+
+                        Occupation
+
+                    </h3>
+
+                    <p>
+
+                        {{ scheme.occupation }}
+
+                    </p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>
+
+                        Income Limit
+
+                    </h3>
+
+                    <p>
+
+                        ₹{{ scheme.income_limit }}
+
+                    </p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>
+
+                        State
+
+                    </h3>
+
+                    <p>
+
+                        {{ scheme.state }}
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Documents -->
+
+        <div class="card">
+
+            <h2>
+
+                <i class="fa-solid fa-file-lines"></i>
+                Required Documents
+
+            </h2>
+
+            <div class="document-grid">
+
+                {% for document in scheme.documents %}
+
+                <div class="document-card">
+
+                    <i class="fa-regular fa-file"></i>
+
+                    {{ document }}
+
+                </div>
+
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+        <!-- Application Process -->
+
+        <div class="card">
+
+            <h2>
+
+                <i class="fa-solid fa-list-check"></i>
+                How To Apply
+
+            </h2>
+
+            <ol class="steps">
+
+                <li>Check eligibility.</li>
+
+                <li>Collect required documents.</li>
+
+                <li>Visit official government portal.</li>
+
+                <li>Fill the application form.</li>
+
+                <li>Submit and track application.</li>
+
+            </ol>
+
+        </div>
+
+        <!-- AI Assistant -->
+
+        <div class="card ai-card">
+
+            <h2>
+
+                <i class="fa-solid fa-robot"></i>
+
+                SchemeAI Assistant
+
+            </h2>
+
+            <p>
+
+                Ask any question regarding this scheme.
+
+            </p>
+
+            <textarea id="question" rows="5" placeholder="Example: Am I eligible for this scheme?"></textarea>
+
+            <button onclick="askAI()">
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+                Ask AI
+
+            </button>
+
+            <div class="ai-response" id="aiResponse">
+
+                AI response will appear here.
+
+            </div>
+
+        </div>
+
+        {% else %}
+
+        <!-- Error -->
+
+        <div class="error-card">
+
+            <h2>
+
+                Scheme Not Found
+
+            </h2>
+
+            <p>
+
+                The requested scheme does not exist.
+
+            </p>
+
+            <a href="/eligibility">
+
+                Go Back
+
+            </a>
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+    <script src="/static/js/script.js"></script>
+
+</body>
+
+</html>

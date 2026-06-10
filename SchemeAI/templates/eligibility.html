@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Eligibility Check | SchemeAI
+    </title>
+
+    <link rel="stylesheet" href="/static/css/eligibility.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Theme Toggle -->
+
+    <button id="themeToggle" class="theme-toggle">
+
+        🌙
+
+    </button>
+
+    <!-- Back Button -->
+
+    <a href="/" class="back-home">
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+        Home
+
+    </a>
+
+    <!-- Background Shapes -->
+
+    <div class="background-shapes">
+
+        <div class="shape shape1"></div>
+
+        <div class="shape shape2"></div>
+
+        <div class="shape shape3"></div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="form-card">
+
+            <!-- Header -->
+
+            <div class="header">
+
+                <span class="badge">
+
+                    <i class="fa-solid fa-robot"></i>
+
+                    AI Eligibility Checker
+
+                </span>
+
+                <h1>
+
+                    Find Government Schemes
+
+                </h1>
+
+                <p>
+
+                    Complete your profile and let
+                    SchemeAI discover the most
+                    relevant government schemes
+                    tailored for you.
+
+                </p>
+
+            </div>
+
+            <!-- Form -->
+
+            <form action="/results" method="POST">
+
+                <div class="grid">
+
+                    <!-- Personal Information -->
+
+                    <div class="section">
+
+                        <h2>
+
+                            <i class="fa-solid fa-user"></i>
+
+                            Personal Information
+
+                        </h2>
+
+                        <div class="input-group">
+
+                            <label>
+                                Age
+                            </label>
+
+                            <input type="number" name="age" min="1" max="100" required>
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>
+                                Gender
+                            </label>
+
+                            <select name="gender" required>
+
+                                <option value="">
+                                    Select Gender
+                                </option>
+
+                                <option>
+                                    Male
+                                </option>
+
+                                <option>
+                                    Female
+                                </option>
+
+                                <option>
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>
+                                State
+                            </label>
+
+                            <input type="text" name="state" placeholder="Enter State Name" required>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Education -->
+
+                    <div class="section">
+
+                        <h2>
+
+                            <i class="fa-solid fa-graduation-cap"></i>
+
+                            Education
+
+                        </h2>
+
+                        <div class="input-group">
+
+                            <label>
+                                Education Level
+                            </label>
+
+                            <select name="education" required>
+
+                                <option value="">
+                                    Select Education
+                                </option>
+
+                                <option>
+                                    School
+                                </option>
+
+                                <option>
+                                    Diploma
+                                </option>
+
+                                <option>
+                                    B.Tech
+                                </option>
+
+                                <option>
+                                    BCA
+                                </option>
+
+                                <option>
+                                    MCA
+                                </option>
+
+                                <option>
+                                    M.Tech
+                                </option>
+
+                                <option>
+                                    Graduate
+                                </option>
+
+                                <option>
+                                    Post Graduate
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Occupation -->
+
+                    <div class="section">
+
+                        <h2>
+
+                            <i class="fa-solid fa-briefcase"></i>
+
+                            Occupation
+
+                        </h2>
+
+                        <div class="input-group">
+
+                            <label>
+                                Occupation
+                            </label>
+
+                            <select name="occupation" required>
+
+                                <option value="">
+                                    Select Occupation
+                                </option>
+
+                                <option>
+                                    Student
+                                </option>
+
+                                <option>
+                                    Farmer
+                                </option>
+
+                                <option>
+                                    Business
+                                </option>
+
+                                <option>
+                                    Employee
+                                </option>
+
+                                <option>
+                                    Unemployed
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Financial Information -->
+
+                    <div class="section">
+
+                        <h2>
+
+                            <i class="fa-solid fa-sack-dollar"></i>
+
+                            Financial Information
+
+                        </h2>
+
+                        <div class="input-group">
+
+                            <label>
+                                Annual Family Income
+                            </label>
+
+                            <input type="number" name="income" placeholder="Enter Annual Income" required>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Social Category -->
+
+                    <div class="section full-width">
+
+                        <h2>
+
+                            <i class="fa-solid fa-building-columns"></i>
+
+                            Social Category
+
+                        </h2>
+
+                        <div class="input-group">
+
+                            <label>
+                                Category
+                            </label>
+
+                            <select name="category" required>
+
+                                <option value="">
+                                    Select Category
+                                </option>
+
+                                <option>
+                                    General
+                                </option>
+
+                                <option>
+                                    OBC
+                                </option>
+
+                                <option>
+                                    SC
+                                </option>
+
+                                <option>
+                                    ST
+                                </option>
+
+                                <option>
+                                    EWS
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Submit Button -->
+
+                <button type="submit" class="submit-btn">
+
+                    <i class="fa-solid fa-rocket"></i>
+
+                    Find My Schemes
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- Dark Mode Script -->
+
+    <script src="/static/js/script.js"></script>
+
+</body>
+
+</html>
